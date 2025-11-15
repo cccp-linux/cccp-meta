@@ -103,4 +103,5 @@ Depends:
  initramfs-tools,
  linux-generic,
  systemd-boot,
+ zstd,
 Description: Kernel and boot packages
