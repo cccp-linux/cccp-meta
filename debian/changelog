@@ -1,3 +1,9 @@
+cccp-meta (0.3) resolute; urgency=medium
+
+  * cccp-standard-meta: reduce dependencies
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 16 Nov 2025 09:42:38 -0500
+
 cccp-meta (0.2) resolute; urgency=medium
 
   * cccp-boot-meta: pull in zstd
