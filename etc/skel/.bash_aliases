@@ -1,9 +1,10 @@
-alias ll="ls -lFN"
-alias la="ls -laFN"
-alias lh="ls -lhFN"
+alias ls="ls -FN --color=auto"
+alias ll="ls -l"
+alias la="ls -la"
+alias lh="ls -lh"
 
 alias installed="apt-mark showmanual"
-alias nspawn="sudo systemd-nspawn"
+alias nspawn="sudo systemd-nspawn --resolv-conf=bind-stub --timezone=off"
 alias sl="sudo su --login"
 
 export HISTCONTROL=ignoreboth
