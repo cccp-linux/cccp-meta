@@ -1,3 +1,10 @@
+cccp-meta (0.4) resolute; urgency=medium
+
+  * Install custom presets
+  * Add license file
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 17 Nov 2025 20:19:53 -0500
+
 cccp-meta (0.3) resolute; urgency=medium
 
   * cccp-standard-meta: reduce dependencies
