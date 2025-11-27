@@ -87,7 +87,6 @@ Recommends:
  systemd-resolved,
  systemd-timesyncd,
  telnet,
- tmux,
  ufw,
  uuid-runtime,
  wget,
