@@ -1,3 +1,9 @@
+cccp-meta (0.6.1) resolute; urgency=medium
+
+  * d/control: fix package type
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 27 Nov 2025 15:17:00 -0500
+
 cccp-meta (0.6) resolute; urgency=medium
 
   * tmux is moving into term-meta
