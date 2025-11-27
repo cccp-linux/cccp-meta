@@ -8,7 +8,7 @@ Build-Depends:
 Standards-Version: 4.6.2
 
 Package: cccp-standard-meta
-Architecture: any
+Architecture: all
 Depends:
  adduser,
  apt,
@@ -95,7 +95,7 @@ Recommends:
 Description: Standard set of CCCP Linux packages
 
 Package: cccp-boot-meta
-Architecture: any
+Architecture: all
 Depends:
  initramfs-tools,
  linux-generic,
