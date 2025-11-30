@@ -1,3 +1,9 @@
+cccp-meta (0.7) resolute; urgency=medium
+
+  * d/control: replace mc with ranger
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 29 Nov 2025 23:08:09 -0500
+
 cccp-meta (0.6.1) resolute; urgency=medium
 
   * d/control: fix package type
