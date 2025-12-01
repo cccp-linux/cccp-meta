@@ -1,3 +1,9 @@
+cccp-meta (0.7.1) resolute; urgency=medium
+
+  * Revert "d/control: replace mc with ranger"
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 01 Dec 2025 14:42:51 -0500
+
 cccp-meta (0.7) resolute; urgency=medium
 
   * d/control: replace mc with ranger
