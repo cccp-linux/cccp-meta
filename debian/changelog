@@ -1,3 +1,9 @@
+cccp-meta (0.8) resolute; urgency=medium
+
+  * Install cmdline as part of cccp-boot-meta
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 10 Dec 2025 14:27:02 -0500
+
 cccp-meta (0.7.1) resolute; urgency=medium
 
   * Revert "d/control: replace mc with ranger"
