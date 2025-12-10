@@ -1,0 +1,1 @@
+ro quiet splash root=LABEL=root net.ifnames=0 vt.cur_default=3
