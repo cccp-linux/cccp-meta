@@ -58,6 +58,7 @@ Recommends:
  bind9-dnsutils,
  busybox-static,
  bzip2,
+ command-not-found,
  cpio,
  debian-archive-keyring,
  exfatprogs,
