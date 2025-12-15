@@ -29,6 +29,7 @@ Depends:
  kbd,
  kmod,
  less,
+ libpam-systemd,
  locales,
  login,
  logrotate,
