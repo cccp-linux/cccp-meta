@@ -86,6 +86,7 @@ Recommends:
  rsync,
  sdparm,
  socat,
+ systemd-homed,
  systemd-resolved,
  systemd-timesyncd,
  telnet,
