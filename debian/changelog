@@ -1,3 +1,9 @@
+cccp-meta (0.13) unstable; urgency=medium
+
+  * d/control: linux-generic is a Ubuntu-only thing
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 03 Jan 2026 12:14:10 -0500
+
 cccp-meta (0.12) unstable; urgency=medium
 
   * d/control: add support for PikaOS
