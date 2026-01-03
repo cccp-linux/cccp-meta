@@ -101,7 +101,7 @@ Package: cccp-boot-meta
 Architecture: all
 Depends:
  initramfs-tools,
- linux-generic,
+ linux-generic | kernel-pika,
  systemd-boot,
  zstd,
 Description: Kernel and boot packages
