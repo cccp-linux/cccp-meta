@@ -1,0 +1,4 @@
+[panel]
+CdParent = alt-up
+HistoryNext = alt-right
+HistoryPrev = alt-left
