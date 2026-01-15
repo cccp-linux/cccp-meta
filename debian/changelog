@@ -1,3 +1,11 @@
+cccp-meta (0.14) unstable; urgency=medium
+
+  * Install mc config files
+  * d/control: recommend fscrypt
+  * d/control: drop support for pika
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 15 Jan 2026 17:45:37 -0500
+
 cccp-meta (0.13) unstable; urgency=medium
 
   * d/control: linux-generic is a Ubuntu-only thing
