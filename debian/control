@@ -63,6 +63,7 @@ Recommends:
  cpio,
  debian-archive-keyring,
  exfatprogs,
+ fscrypt,
  fzf,
  htop,
  iputils-tracepath,
