@@ -13,6 +13,7 @@ Depends:
  adduser,
  apt,
  awk,
+ btrfs-progs,
  console-setup,
  debconf,
  distro-info,
