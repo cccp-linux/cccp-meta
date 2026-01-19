@@ -107,5 +107,13 @@ Depends:
  systemd-boot,
  zstd,
 Recommends:
- firmware-linux | linux-firmware,
+ amd64-microcode,
+ firmware-intel-graphics    | linux-firmware,
+ firmware-intel-misc        | linux-firmware,
+ firmware-iwlwifi           | linux-firmware,
+ firmware-linux             | linux-firmware,
+ firmware-mediatek          | linux-firmware,
+ firmware-nvidia-graphics   | linux-firmware,
+ firmware-realtek           | linux-firmware,
+ intel-microcode,
 Description: Kernel and boot packages
