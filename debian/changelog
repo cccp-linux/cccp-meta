@@ -1,3 +1,9 @@
+cccp-meta (0.21) unstable; urgency=medium
+
+  * Add install_meta script
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 30 Jan 2026 13:00:02 -0500
+
 cccp-meta (0.20) unstable; urgency=medium
 
   * synchro: update
