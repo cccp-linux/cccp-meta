@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+
+bold() { tput bold; echo "$@"; tput sgr0; }
+ red() { tput setaf 1; echo "$@"; tput sgr0; }
+fail() { red "$@" >&2; exit 1; }
+
+package="$1"
+shift
+
+rec=$(apt-cache depends "$package" | grep "Recommends:")
+if echo "$rec" | grep -q "|"; then
+    fail "Package has complex dependents"
+fi
+
+rec=$(echo "$rec" | awk '{print $2}')
+man=$(apt-mark showmanual)
+rec=$(echo $man $man $rec | tr ' ' '\n' | sort | uniq -u)
+# discard packages with no install candidates (will return 2 empty "Provides:" and "Reverse Provides:" lines)
+val=$(for p in $rec; do ((2 == $(apt-cache showpkg $p | grep -A3 "^Provides:" | wc -l))) || echo $p; done)
+
+bold "Installing $package"
+apt install --no-install-recommends "$package" "$@"
+
+if [[ "$val" ]]; then
+    new=$(apt-get -s install --no-install-recommends $val "$@" | grep "^Inst " | cut -d' ' -f2)
+    if [[ "$new" ]]; then
+        echo
+        bold "Installing $package+"
+        apt install --no-install-recommends --mark-auto $new "$@"
+    fi
+fi
