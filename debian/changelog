@@ -1,3 +1,12 @@
+cccp-meta (0.20) unstable; urgency=medium
+
+  * synchro: update
+  * .bash_aliases: add tarx alias
+  * README.md: update
+  * d/control: add links
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 29 Jan 2026 21:05:35 -0500
+
 cccp-meta (0.19) unstable; urgency=medium
 
   * d/control: update
