@@ -13,7 +13,7 @@ if echo "$rec" | grep -q "|"; then
     fail "Package has complex dependents"
 fi
 
-rec=$(echo "$rec" | awk '{print $2}')
+rec=$(echo "$rec" | awk '{print $2}' | tr -d "<>")
 man=$(apt-mark showmanual)
 rec=$(echo $man $man $rec | tr ' ' '\n' | sort | uniq -u)
 # discard packages with no install candidates (will return 2 empty "Provides:" and "Reverse Provides:" lines)
