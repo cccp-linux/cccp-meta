@@ -1,3 +1,9 @@
+cccp-meta (0.23) unstable; urgency=medium
+
+  * d/control: recommend acl and attr
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 03 Feb 2026 11:58:21 -0500
+
 cccp-meta (0.22) unstable; urgency=medium
 
   * install_meta: fix for invalid packages
