@@ -57,6 +57,8 @@ Depends:
  usbutils,
  vim-tiny,
 Recommends:
+ acl,
+ attr,
  bash-completion,
  bind9-dnsutils,
  btop,
