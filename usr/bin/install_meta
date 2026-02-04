@@ -8,7 +8,7 @@ fail() { red "$@" >&2; exit 1; }
 package="$1"
 shift
 
-rec=$(apt-cache depends "$package" | grep "Recommends:")
+rec=$(apt-cache depends "$package" | sed -n "/Recommends:/p")
 if echo "$rec" | grep -q "|"; then
     fail "Package has complex dependents"
 fi
