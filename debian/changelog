@@ -1,3 +1,9 @@
+cccp-meta (0.24) unstable; urgency=medium
+
+  * install_meta: don't fail on no recommends
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 04 Feb 2026 14:38:47 -0500
+
 cccp-meta (0.23) unstable; urgency=medium
 
   * d/control: recommend acl and attr
