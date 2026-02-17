@@ -126,4 +126,5 @@ Recommends:
  firmware-nvidia-graphics,
  firmware-realtek,
  intel-microcode,
+ shim-signed,
 Description: Kernel and boot packages
