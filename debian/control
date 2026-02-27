@@ -128,4 +128,5 @@ Recommends:
  firmware-realtek,
  intel-microcode,
  shim-signed,
+ systemd-boot-efi-signed,
 Description: Kernel and boot packages
