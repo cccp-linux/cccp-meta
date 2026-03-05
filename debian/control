@@ -129,4 +129,5 @@ Recommends:
  intel-microcode,
  shim-signed,
  systemd-boot-efi-signed,
+ wireless-regdb,
 Description: Kernel and boot packages
