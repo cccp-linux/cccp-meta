@@ -59,6 +59,7 @@ Recommends:
  acl,
  attr,
  bash-completion,
+ bc,
  bind9-dnsutils,
  btop,
  busybox-static,
