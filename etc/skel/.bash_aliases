@@ -1,3 +1,5 @@
+# .bash_aliases
+
 alias ls="ls -FN --color=auto"
 alias ll="ls -l"
 alias la="ls -la"
@@ -7,7 +9,7 @@ alias calc="bc -l"
 alias installed="apt-mark showmanual"
 alias nspawn="sudo systemd-nspawn --resolv-conf=bind-stub --timezone=off"
 alias sl="sudo su --login"
-alias tarx="tar --xattrs --xattrs-include='*' --acls --special"
+alias tarx="tar --xattrs --xattrs-include='*' --acls"
 
 export HISTCONTROL=ignoreboth
 
