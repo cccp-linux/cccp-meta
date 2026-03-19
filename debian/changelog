@@ -1,3 +1,11 @@
+cccp-meta (0.31) unstable; urgency=medium
+
+  * .bash_aliases: tweak
+  * d/control: recommend bc
+  * d/control: replace systemd-homed with libpam-mount
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Thu, 19 Mar 2026 17:20:58 -0400
+
 cccp-meta (0.30) unstable; urgency=medium
 
   * d/control: make sysstat optional
