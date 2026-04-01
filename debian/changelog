@@ -1,3 +1,9 @@
+cccp-meta (0.34) unstable; urgency=medium
+
+  * noerd{,-root}.ini: tweak
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 31 Mar 2026 21:27:51 -0400
+
 cccp-meta (0.33) unstable; urgency=medium
 
   * nord{,-root}.ini => noerd{,-root}.ini
