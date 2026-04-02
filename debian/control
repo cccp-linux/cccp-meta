@@ -111,7 +111,7 @@ Recommends:
 Description: Standard set of CCCP Linux packages
 
 Package: cccp-boot-meta
-Architecture: all
+Architecture: any
 Depends:
  initramfs-tools,
  linux-headers-generic,
