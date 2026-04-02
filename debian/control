@@ -129,6 +129,7 @@ Recommends:
  firmware-realtek,
  intel-microcode,
  shim-signed,
- systemd-boot-efi-signed,
+ systemd-boot-efi-amd64-signed [amd64],
+ systemd-boot-efi-arm64-signed [arm64],
  wireless-regdb,
 Description: Kernel and boot packages
