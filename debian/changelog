@@ -1,3 +1,10 @@
+cccp-meta (0.37) unstable; urgency=medium
+
+  * d/control: switch to Architecture: any
+  * Revert "d/control: don't use platform deps"
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 01 Apr 2026 21:06:24 -0400
+
 cccp-meta (0.36) unstable; urgency=medium
 
   * d/control: don't use platform deps
