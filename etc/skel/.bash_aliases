@@ -9,7 +9,6 @@ alias installed="apt-mark showmanual"
 alias mvi='mpv --config-dir=~/.config/mvi'
 alias nspawn="sudo systemd-nspawn --resolv-conf=bind-stub --timezone=off"
 alias sl="sudo su --login"
-alias tarx="tar --xattrs --xattrs-include='*' --acls"
 
 export HISTCONTROL=ignoreboth
 export NEWT_COLORS=root=black,black
