@@ -1,3 +1,11 @@
+cccp-meta (0.38) unstable; urgency=medium
+
+  * .bash_aliases: mvi is part of niri-meta
+  * .bash_aliases: not using tarx
+  * d/control: replace bc with qalc
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 22 Apr 2026 16:08:14 -0400
+
 cccp-meta (0.37) unstable; urgency=medium
 
   * d/control: switch to Architecture: any
