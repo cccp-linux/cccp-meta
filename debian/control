@@ -101,6 +101,7 @@ Recommends:
  systemd-timesyncd,
  telnet,
  trace-cmd,
+ udftools,
  ufw,
  unzip,
  uuid-runtime,
