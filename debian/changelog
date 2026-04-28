@@ -1,3 +1,9 @@
+cccp-meta (0.39) unstable; urgency=medium
+
+  * d/control: depend on udftools
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 28 Apr 2026 16:25:06 -0400
+
 cccp-meta (0.38) unstable; urgency=medium
 
   * .bash_aliases: mvi is part of niri-meta
