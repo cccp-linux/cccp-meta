@@ -1,3 +1,10 @@
+cccp-meta (0.40) unstable; urgency=medium
+
+  * d/control: recommend archivemount
+  * d/control: recommend lf
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 28 Apr 2026 22:58:04 -0400
+
 cccp-meta (0.39) unstable; urgency=medium
 
   * d/control: depend on udftools
