@@ -57,6 +57,7 @@ Depends:
  vim-tiny,
 Recommends:
  acl,
+ archivemount,
  attr,
  bash-completion,
  bind9-dnsutils,
