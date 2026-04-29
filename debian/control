@@ -71,6 +71,7 @@ Recommends:
  genisoimage,
  htop,
  iputils-tracepath,
+ lf,
  libpam-mount-bin,
  lshw,
  man-db,
