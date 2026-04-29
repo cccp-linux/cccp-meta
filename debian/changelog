@@ -1,3 +1,9 @@
+cccp-meta (0.41) unstable; urgency=medium
+
+  * d/control: hxtools is needed by libpam-mount
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 29 Apr 2026 16:25:45 -0400
+
 cccp-meta (0.40) unstable; urgency=medium
 
   * d/control: recommend archivemount
