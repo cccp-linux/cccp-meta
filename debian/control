@@ -70,6 +70,7 @@ Recommends:
  fscrypt,
  fzf,
  genisoimage,
+ highlight,
  htop,
  hxtools,
  iputils-tracepath,

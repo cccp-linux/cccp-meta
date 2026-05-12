@@ -1,4 +1,8 @@
 set hidden true
 set icons true
 set preview false
+set previewer ~/.config/lf/preview
 set ratios 1:2
+
+map gx &xdg-open "$f"
+map <c-p> set preview!

@@ -1,0 +1,2 @@
+#!/bin/sh
+highlight --force -O ansi "$1" || true
