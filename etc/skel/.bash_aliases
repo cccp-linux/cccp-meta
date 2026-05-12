@@ -13,5 +13,5 @@ export HISTCONTROL=ignoreboth
 export NEWT_COLORS=root=black,black
 
 if [[ -x $(command -v nvim) ]]; then
-    export MANPAGER="nvim +Man!"
+    export MANPAGER="nvim '+color vim' +Man!"
 fi
