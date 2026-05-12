@@ -1,3 +1,10 @@
+cccp-meta (0.42) unstable; urgency=medium
+
+  * .bash_aliases: distinguish man pages
+  * lf: colored preview
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 12 May 2026 17:38:46 -0400
+
 cccp-meta (0.41) unstable; urgency=medium
 
   * d/control: hxtools is needed by libpam-mount
