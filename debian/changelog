@@ -1,3 +1,9 @@
+cccp-meta (0.43) unstable; urgency=medium
+
+  * Nicer manpager
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 31 May 2026 15:21:11 -0400
+
 cccp-meta (0.42) unstable; urgency=medium
 
   * .bash_aliases: distinguish man pages
