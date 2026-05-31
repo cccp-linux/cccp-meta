@@ -1,3 +1,9 @@
+cccp-meta (0.44) unstable; urgency=medium
+
+  * .bash_aliases: fix man pager
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 31 May 2026 18:17:48 -0400
+
 cccp-meta (0.43) unstable; urgency=medium
 
   * Nicer manpager
