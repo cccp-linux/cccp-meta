@@ -15,3 +15,15 @@ export NEWT_COLORS=root=black,black
 if [[ -x $(command -v nvim) ]]; then
     export MANPAGER="nvim --clean -u ~/.config/nvim/manpager.vim +Man!"
 fi
+
+osc7_cwd()
+{
+    local c i
+    printf '\e]7;file://'
+    for ((i = 0; i < ${#PWD}; ++i)); do
+        c=${PWD:$i:1}
+        [[ "$c" == [-/:_.!\'\(\)~a-zA-Z0-9] ]] && printf '%s' "$c" || printf '%%%02X' "'$c"
+    done
+    printf '\e\\'
+}
+PROMPT_COMMAND=${PROMPT_COMMAND:+${PROMPT_COMMAND%;}; }osc7_cwd
