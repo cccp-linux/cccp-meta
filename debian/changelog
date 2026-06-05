@@ -1,3 +1,11 @@
+cccp-meta (0.45) unstable; urgency=medium
+
+  * Add Debian release workflow
+  * d/control: recommend pycal
+  * .bash_aliases: emit OSC7
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Fri, 05 Jun 2026 11:45:23 -0400
+
 cccp-meta (0.44) unstable; urgency=medium
 
   * .bash_aliases: fix man pager
