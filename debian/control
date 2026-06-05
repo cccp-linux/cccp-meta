@@ -93,6 +93,7 @@ Recommends:
  openssh-client,
  openssh-server,
  psmisc,
+ pycal,
  python3,
  qalc,
  rename,
