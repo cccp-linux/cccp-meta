@@ -11,6 +11,7 @@ alias sl="sudo su --login"
 
 export HISTCONTROL=ignoreboth
 export NEWT_COLORS=root=black,black
+export NO_AT_BRIDGE=1
 
 if [[ -x $(command -v nvim) ]]; then
     export MANPAGER="nvim --clean -u ~/.config/nvim/manpager.vim +Man!"
