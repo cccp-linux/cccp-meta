@@ -1,3 +1,9 @@
+cccp-meta (0.46) unstable; urgency=medium
+
+  * .bash_aliases: disable AT bridge
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Mon, 29 Jun 2026 10:31:28 -0400
+
 cccp-meta (0.45) unstable; urgency=medium
 
   * Add Debian release workflow
