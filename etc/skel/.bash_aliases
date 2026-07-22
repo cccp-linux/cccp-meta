@@ -9,9 +9,11 @@ alias installed="apt-mark showmanual"
 alias nspawn="sudo systemd-nspawn --resolv-conf=bind-stub --timezone=off"
 alias sl="sudo su --login"
 
+export GTK_A11Y=none
 export HISTCONTROL=ignoreboth
 export NEWT_COLORS=root=black,black
 export NO_AT_BRIDGE=1
+export QT_ACCESSIBILITY=0
 
 if [[ -x $(command -v nvim) ]]; then
     export MANPAGER="nvim --clean -u ~/.config/nvim/manpager.vim +Man!"
