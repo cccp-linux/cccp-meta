@@ -75,6 +75,7 @@ Recommends:
  hxtools,
  iputils-tracepath,
  lf,
+ libfile-mimeinfo-perl,
  libpam-mount,
  libpam-mount-bin,
  lshw,
