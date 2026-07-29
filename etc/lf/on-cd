@@ -1,0 +1,26 @@
+#!/bin/bash
+basedir=/tmp/lf-"$1"
+
+if [[ -f "$basedir/mounts" ]]; then
+    mapfile -t mounts < "$basedir/mounts"
+
+    modified=
+    while ((${#mounts[@]})); do
+        IFS=: read -r parent mount <<< "${mounts[-1]}"
+        [[ "$PWD/" == "$mount"/* ]] && break
+
+        fusermount -quz "$mount"
+        rmdir "$mount" 2>/dev/null
+        unset "mounts[-1]"
+        modified=1
+
+        if [[ "$PWD" == "$basedir" ]]; then
+            lf -remote "send $1 cd \"$parent\""
+            break
+        fi
+    done
+
+    if [[ "$modified" ]]; then
+        { ((${#mounts[@]})) && printf '%s\n' "${mounts[@]}"; } > "$basedir/mounts"
+    fi
+fi

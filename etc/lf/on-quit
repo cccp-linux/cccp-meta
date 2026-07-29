@@ -1,0 +1,16 @@
+#!/bin/bash
+basedir=/tmp/lf-"$1"
+
+if [[ -f "$basedir/mounts" ]]; then
+    mapfile -t mounts < "$basedir/mounts"
+
+    while ((${#mounts[@]})); do
+        IFS=: read -r parent mount <<< "${mounts[-1]}"
+
+        fusermount -quz "$mount"
+        rmdir "$mount" 2>/dev/null
+        unset "mounts[-1]"
+    done
+fi
+
+rm -rf "$basedir"

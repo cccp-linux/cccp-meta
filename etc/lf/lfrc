@@ -1,0 +1,102 @@
+# lfrc
+
+####################
+set hidden true
+set icons true
+set incsearch true
+set info size:time
+set mouse true
+set preview false
+set previewer /etc/lf/preview
+set ratios 1:3
+set shell bash
+
+####################
+cmd cd-media $lf -remote "send $id cd ~/media"
+
+cmd fzf ${{
+    fd=
+    [[ "$1" == "-i" ]] || fd=$(command -v fdfind || command -v fd)
+
+    if [[ "$fd" ]]; then
+        export FZF_DEFAULT_COMMAND="$fd -u --exclude .git --exclude build --color=always"
+        export FZF_DEFAULT_OPTS="--ansi --prompt='find: '"
+    else
+        unset FZF_DEFAULT_COMMAND
+        export FZF_DEFAULT_OPTS="--prompt='find: ' --walker=file,dir,follow,hidden --walker-skip=.git,build"
+    fi
+
+    res="$(fzf || true)"
+    if [[ -n "$res" ]]; then
+        [[ -d "$res" ]] && cmd="cd" || cmd="select"
+        lf -remote "send $id $cmd ${res@Q}"
+    fi
+}}
+
+cmd insert-name ${{
+    f="${f##*/}"
+    [[ "$f" == *[^a-zA-Z0-9_./-]* ]] && f="${f@Q}" && f="${f// /<space>}"
+    lf -remote "send $id push $f<space>"
+}}
+cmd insert-path ${{
+    [[ "$f" == *[^a-zA-Z0-9_./-]* ]] && f="${f@Q}" && f="${f// /<space>}"
+    lf -remote "send $id push $f<space>"
+}}
+
+cmd on-cd &/etc/lf/on-cd "$id"
+cmd on-quit $/etc/lf/on-quit "$id"
+
+cmd open ${{
+    mime=$(mimetype -Lb "$f"); mime="${mime#application/}"; mime="${mime#x-}"; mime="${mime#vnd.}"
+
+    case "$mime" in
+        apple-diskimage|*-archive|archive|bzip2|*-compressed|compressed-tar|*-compressed-tar|cpio|debian.binary-package|gzip|iso9660-image|lha|lz4|lzma|ms-wim|rar|rpm|squashfs|tar|udf|udf-image|xz|zip|zstd)
+            basedir=/tmp/lf-"$id"
+            mkdir -p "$basedir"
+            mount=$(mktemp -d "$basedir/XXXXXX")
+
+            if archivemount "$f" "$mount"; then
+                echo "$PWD:$mount" >> "$basedir/mounts"
+                lf -remote "send $id cd \"$mount\""
+            else
+                rmdir "$mount"
+            fi
+        ;;
+
+        *) mimeopen "$@" "$f" ;;
+    esac
+}}
+
+cmd openwith ${{
+    setsid -f "$1" "$f" >/dev/null 2>&1
+}}
+
+cmd ripgrep ${{
+    rg="rg --column --line-number --no-heading --color=always --smart-case"
+
+    : | fzf --ansi --delimiter=: --disabled --prompt='search: ' \
+        --bind="change:reload($rg -- {q} || true)" \
+        --bind='enter:become(lf -remote "send $id select $(printf "%q" {1})")' \
+        --preview="/etc/lf/preview {1}" || true
+}}
+
+####################
+cmap <a-n> insert-name
+cmap <a-p> insert-path
+
+map <enter> open
+map - updir
+
+map a push %mkdir<space>
+map <a-d> delete
+map f
+map ff fzf
+map fg ripgrep
+map fi fzf -i
+map gm cd-media
+map gr cd /
+map i $LESSOPEN='| /etc/lf/preview %s' less -r "$f"
+map o open
+map <a-o> open --ask
+map <c-o> push :openwith<space>
+map <c-p> set preview!

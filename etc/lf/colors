@@ -1,0 +1,17 @@
+# colors
+
+### generic ###
+#bd                     -       # blk
+#cd                     -       # chr
+#di                     -       # dir
+#ex                     -       # exec
+#fi                     -       # file
+ln                      38;2;142;192;124 # link
+or                      38;2;255;0;0 # orphan
+ow                      32      # other_writable
+pi                      33      # fifo
+sg                      33      # setgid
+#so                             # sock
+st                      34      # sticky
+su                      31      # setuid
+tw                      32      # sticky_other_writable
