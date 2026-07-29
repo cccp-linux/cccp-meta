@@ -1,3 +1,9 @@
+cccp-meta (0.49) unstable; urgency=medium
+
+  * Install system-wide lf config
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Wed, 29 Jul 2026 12:36:50 -0400
+
 cccp-meta (0.48) unstable; urgency=medium
 
   * Phasing out mc
