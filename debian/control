@@ -82,7 +82,6 @@ Recommends:
  lshw,
  man-db,
  manpages,
- mc,
  mtr-tiny,
  net-tools,
  netbase,
