@@ -2,19 +2,19 @@
 
 ### generic ###
 bd                             # blk
-cd                      󰐣       # chr
+cd                             # chr
 di                             # dir
 ex                             # exec
 fi                      󰧭       # file
 ln                      󰁜       # link
 or                      󰃹       # orphan
-ow                             # other_writable
+ow                             # other_writable
 pi                      󰴽       # fifo
 sg                              # setgid
 so                      󱘖       # sock
-st                             # sticky
+st                             # sticky
 su                              # setuid
-tw                             # sticky_other_writable
+tw                             # sticky_other_writable
 
 ### directories ###
 .config/                       38;2;255;152;0
