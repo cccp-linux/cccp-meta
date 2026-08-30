@@ -15,9 +15,7 @@ set shell bash
 cmd cd-media &lf -remote "send $id cd /media/$USER"
 
 cmd fzf ${{
-    fd=
-    [[ "$1" == "-i" ]] || fd=$(command -v fdfind || command -v fd)
-
+    fd=$(command -v fdfind || command -v fd)
     if [[ "$fd" ]]; then
         export FZF_DEFAULT_COMMAND="$fd -u --exclude .git --exclude build --color=always"
         export FZF_DEFAULT_OPTS="--ansi --prompt='find: '"
@@ -92,7 +90,6 @@ map <a-d> delete
 map f
 map ff fzf
 map fg ripgrep
-map fi fzf -i
 map gm cd-media
 map gr cd /
 map i $LESSOPEN='| /etc/lf/preview %s' less -r "$f"
