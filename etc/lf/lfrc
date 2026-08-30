@@ -33,12 +33,12 @@ cmd fzf ${{
     fi
 }}
 
-cmd insert-name ${{
+cmd insert-name &{{
     f="${f##*/}"
     [[ "$f" == *[^a-zA-Z0-9_./-]* ]] && f="${f@Q}" && f="${f// /<space>}"
     lf -remote "send $id push $f<space>"
 }}
-cmd insert-path ${{
+cmd insert-path &{{
     [[ "$f" == *[^a-zA-Z0-9_./-]* ]] && f="${f@Q}" && f="${f// /<space>}"
     lf -remote "send $id push $f<space>"
 }}
