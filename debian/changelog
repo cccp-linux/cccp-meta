@@ -1,3 +1,9 @@
+cccp-meta (0.52) unstable; urgency=medium
+
+  * lf: clean up
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sat, 26 Sep 2026 12:40:15 -0400
+
 cccp-meta (0.51) unstable; urgency=medium
 
   * lf: fix
