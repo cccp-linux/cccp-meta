@@ -16,7 +16,7 @@ export NO_AT_BRIDGE=1
 export QT_ACCESSIBILITY=0
 
 if [[ -x $(command -v nvim) ]]; then
-    export MANPAGER="nvim --clean -u ~/.config/nvim/manpager.vim +Man!"
+    export MANPAGER="nvim --clean -u /usr/share/cccp-meta/manpager.vim +Man!"
 fi
 
 osc7_cwd()
