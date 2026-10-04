@@ -1,0 +1,24 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        mkdir -p /etc/skel/.bashrc.d /etc/skel/.profile.d
+
+        dpkg-divert --package cccp-standard-meta --add --rename \
+            --divert /etc/skel/.bashrc.d/10-debian.sh /etc/skel/.bashrc
+        dpkg-divert --package cccp-standard-meta --add --rename \
+            --divert /etc/skel/.profile.d/10-debian.sh /etc/skel/.profile
+
+        cp /usr/share/cccp-meta/bashrc  /etc/skel/.bashrc
+        cp /usr/share/cccp-meta/profile /etc/skel/.profile
+        ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure|triggered) ;;
+
+    *) echo "postinst called with unknown argument '$1'" >&2 ; exit 1 ;;
+esac
+
+#DEBHELPER#
+
+exit 0

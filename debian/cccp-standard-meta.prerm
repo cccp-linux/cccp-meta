@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove)
+        rm -f /etc/skel/.bashrc /etc/skel/.profile
+
+        dpkg-divert --package cccp-standard-meta --remove --rename /etc/skel/.bashrc
+        dpkg-divert --package cccp-standard-meta --remove --rename /etc/skel/.profile
+
+        rmdir /etc/skel/.bashrc.d /etc/skel/.profile.d 2>/dev/null || true
+    ;;
+
+    upgrade|deconfigure|failed-upgrade) ;;
+
+    *)  echo "prerm called with unknown argument '$1'" >&2 ; exit 1 ;;
+esac
+
+#DEBHELPER#
+
+exit 0
