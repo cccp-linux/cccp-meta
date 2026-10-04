@@ -1,3 +1,15 @@
+cccp-meta (1.0) unstable; urgency=medium
+
+  * Check version above and delete this line
+  * Add support for fzf completion
+  * Apply dircolors system-wide
+  * .bash_aliases => 30-alias.sh
+  * Use diversion for .profile.d and .bashrc.d support
+  * Not using mc anymore
+  * Move manpager.vim to /usr/share/cccp-meta
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 04 Oct 2026 17:56:30 -0400
+
 cccp-meta (0.52) unstable; urgency=medium
 
   * lf: clean up
