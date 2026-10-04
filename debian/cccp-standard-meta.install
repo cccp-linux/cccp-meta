@@ -1,4 +1,5 @@
 etc/lf
 etc/skel
+etc/DIR_COLORS
 etc/synchro.conf
 usr
