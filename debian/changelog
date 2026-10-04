@@ -1,3 +1,9 @@
+cccp-meta (1.1) unstable; urgency=medium
+
+  * cccp-standard-meta: missed DIR_COLORS
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 04 Oct 2026 18:37:50 -0400
+
 cccp-meta (1.0) unstable; urgency=medium
 
   * Check version above and delete this line
