@@ -1,4 +1,4 @@
-# .dircolors
+# DIR_COLORS
 
 COLORTERM ?*
 TERM    Eterm
