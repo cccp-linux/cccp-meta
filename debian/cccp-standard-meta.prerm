@@ -3,12 +3,13 @@ set -e
 
 case "$1" in
     remove)
-        rm -f /etc/skel/.bashrc /etc/skel/.profile
+        rm -f /etc/bash.bashrc /etc/skel/.bashrc /etc/skel/.profile
 
+        dpkg-divert --package cccp-standard-meta --remove --rename /etc/bash.bashrc
         dpkg-divert --package cccp-standard-meta --remove --rename /etc/skel/.bashrc
         dpkg-divert --package cccp-standard-meta --remove --rename /etc/skel/.profile
 
-        rmdir /etc/skel/.bashrc.d /etc/skel/.profile.d 2>/dev/null || true
+        rmdir /etc/bashrc.d /etc/skel/.bashrc.d /etc/skel/.profile.d 2>/dev/null || true
     ;;
 
     upgrade|deconfigure|failed-upgrade) ;;
