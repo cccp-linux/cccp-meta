@@ -1,3 +1,0 @@
-etc/bashrc.distrib etc/bashrc.d/10-distrib.sh
-etc/skel/.bashrc.distrib etc/skel/.bashrc.d/10-distrib.sh
-etc/skel/.profile.distrib etc/skel/.profile.d/10-distrib.sh
