@@ -1,3 +1,10 @@
+cccp-meta (1.2) unstable; urgency=medium
+
+  * Add install blurb
+  * 70-fzf.sh => 30-fzf.sh
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Sun, 04 Oct 2026 21:17:01 -0400
+
 cccp-meta (1.1) unstable; urgency=medium
 
   * cccp-standard-meta: missed DIR_COLORS
