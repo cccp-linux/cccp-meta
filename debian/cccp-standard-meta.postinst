@@ -10,8 +10,8 @@ case "$1" in
         dpkg-divert --package cccp-standard-meta --add --rename \
             --divert /etc/skel/.profile.distrib /etc/skel/.profile
 
-        cp /usr/share/cccp-meta/bashrc  /etc/skel/.bashrc
-        cp /usr/share/cccp-meta/profile /etc/skel/.profile
+        cp /usr/share/cccp-meta/skel.bashrc  /etc/skel/.bashrc
+        cp /usr/share/cccp-meta/skel.profile /etc/skel/.profile
         ;;
 
     abort-upgrade|abort-remove|abort-deconfigure|triggered) ;;
