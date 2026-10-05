@@ -6,9 +6,9 @@ case "$1" in
         mkdir -p /etc/skel/.bashrc.d /etc/skel/.profile.d
 
         dpkg-divert --package cccp-standard-meta --add --rename \
-            --divert /etc/skel/.bashrc.d/10-debian.sh /etc/skel/.bashrc
+            --divert /etc/skel/.bashrc.distrib /etc/skel/.bashrc
         dpkg-divert --package cccp-standard-meta --add --rename \
-            --divert /etc/skel/.profile.d/10-debian.sh /etc/skel/.profile
+            --divert /etc/skel/.profile.distrib /etc/skel/.profile
 
         cp /usr/share/cccp-meta/bashrc  /etc/skel/.bashrc
         cp /usr/share/cccp-meta/profile /etc/skel/.profile
