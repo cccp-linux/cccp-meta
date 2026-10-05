@@ -117,6 +117,11 @@ Recommends:
  xz-utils,
  zip,
 Description: Standard set of CCCP Linux packages
+ Copy the following into your home dir:
+ * /etc/skel/.bashrc
+ * /etc/skel/.bashrc.d/
+ * /etc/skel/.profile
+ * /etc/skel/.profile.d/
 
 Package: cccp-boot-meta
 Architecture: any
